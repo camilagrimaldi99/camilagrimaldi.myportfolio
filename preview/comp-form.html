@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Form fields" subtitle="Underline inputs, ink submit" viewport="700x330" -->
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--paper); padding: 32px 40px; }
+  form { display: flex; flex-direction: column; gap: 20px; max-width: 460px; }
+  .field { display: flex; flex-direction: column; gap: 8px; }
+  label { font-family: var(--font-sans); font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+  input, textarea { font-family: var(--font-sans); font-size: 15px; color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--hairline-strong); padding: 8px 0; outline: none; transition: border-color var(--dur-ui); border-radius: 0; }
+  input::placeholder, textarea::placeholder { color: var(--ink-4); }
+  input:focus, textarea:focus { border-color: var(--ink); }
+  .send { align-self: flex-start; background: var(--ink); color: var(--on-ink); border: 0; padding: 13px 26px; font-family: var(--font-sans); font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; }
+</style></head>
+<body>
+  <form onsubmit="return false">
+    <div class="field"><label>Name</label><input placeholder="Studio / name"></div>
+    <div class="field"><label>Email</label><input placeholder="name@studio.com"></div>
+    <div class="field"><label>Message</label><textarea rows="2" placeholder="Tell me about the project"></textarea></div>
+    <button class="send">Send enquiry</button>
+  </form>
+</body></html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Hairlines & accent" subtitle="Rules + the rarely-used clay accent" viewport="700x235" -->
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--paper); padding: 32px 40px; display:flex; flex-direction: column; gap: 24px; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .sw { display: flex; flex-direction: column; gap: 10px; }
+  .chip { height: 64px; }
+  .nm { font-family: var(--font-sans); font-weight: 500; font-size: 11.5px; letter-spacing: 0.04em; color: var(--ink); }
+  .hex { font-family: var(--font-sans); font-size: 11px; color: var(--ink-3); }
+  .note { font-family: var(--font-sans); font-size: 12px; line-height:1.5; color: var(--ink-3); max-width: 540px; }
+  .note b { color: var(--ink-2); font-weight: 500; }
+</style></head>
+<body>
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:var(--hairline); border:1px solid var(--hairline-strong)"></div><span class="nm">hairline</span><span class="hex">#DAD6CF</span></div>
+    <div class="sw"><div class="chip" style="background:var(--hairline-strong)"></div><span class="nm">hairline-strong</span><span class="hex">#BEB9B1</span></div>
+    <div class="sw"><div class="chip" style="background:var(--accent)"></div><span class="nm">accent (clay)</span><span class="hex">#9C5B3F</span></div>
+    <div class="sw"><div class="chip" style="background:var(--accent-2)"></div><span class="nm">accent-2</span><span class="hex">#B27457</span></div>
+  </div>
+  <p class="note"><b>Accent discipline.</b> The clay is a quiet nod to Buenos Aires earth tones, used <b>almost never</b> — at most a single active-nav mark or hover underline. Color is otherwise carried entirely by photography.</p>
+</body></html>

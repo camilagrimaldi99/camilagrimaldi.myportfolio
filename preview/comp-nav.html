@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Top bar" subtitle="Quiet nav, hairline divider" viewport="700x135" -->
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--paper); }
+  .bar { display: flex; align-items: center; justify-content: space-between; padding: 22px 40px; border-bottom: 1px solid var(--hairline); }
+  .wm { font-family: var(--font-display); font-weight: 400; font-size: 23px; letter-spacing: -0.005em; color: var(--ink); }
+  nav { display: flex; gap: 30px; align-items: center; }
+  a { font-family: var(--font-sans); font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); text-decoration: none; transition: color var(--dur-ui); }
+  a:hover { color: var(--ink); }
+  a.active { color: var(--ink); }
+  a.active::after { content: ""; display: block; height: 1px; background: var(--accent); margin-top: 5px; }
+  .sub { padding: 16px 40px; font-family: var(--font-sans); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-4); }
+</style></head>
+<body>
+  <div class="bar">
+    <div class="wm">Camila Grimaldi</div>
+    <nav>
+      <a class="active" href="#">Projects</a>
+      <a href="#">Research</a>
+      <a href="#">Profile</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+  <div class="sub">Top bar — Projects · Research · Profile · Contact; active item marked with a single clay rule</div>
+</body></html>

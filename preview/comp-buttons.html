@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Buttons & links" subtitle="Ink, ghost, arrow-link" viewport="700x150" -->
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--paper); padding: 36px 40px; display: flex; flex-direction: column; gap: 24px; }
+  .row { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+  button { font-family: var(--font-sans); cursor: pointer; border-radius: var(--r-0); }
+  .btn-ink { background: var(--ink); color: var(--on-ink); border: 1px solid var(--ink); padding: 13px 26px; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; transition: opacity var(--dur-ui) var(--ease-out); }
+  .btn-ink:hover { opacity: 0.82; }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--hairline-strong); padding: 13px 26px; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; transition: border-color var(--dur-ui); }
+  .btn-ghost:hover { border-color: var(--ink); }
+  .link { background: none; border: 0; padding: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); display: inline-flex; align-items: center; gap: 10px; }
+  .link .ar { transition: transform var(--dur-ui) var(--ease-out); }
+  .link:hover .ar { transform: translateX(5px); }
+  .cap { font-family: var(--font-sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-4); }
+</style></head>
+<body>
+  <span class="cap">Buttons &amp; links</span>
+  <div class="row">
+    <button class="btn-ink">View project</button>
+    <button class="btn-ghost">Download CV</button>
+    <button class="link">All works <span class="ar">→</span></button>
+  </div>
+</body></html>

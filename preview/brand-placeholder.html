@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Brand" name="Image plate" subtitle="Placeholder treatment for imagery" viewport="700x250" -->
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--paper); padding: 30px 40px; }
+  .cap { font-family: var(--font-sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-4); margin-bottom: 18px; }
+  .plate { position: relative; aspect-ratio: 16 / 7; background:
+      repeating-linear-gradient(135deg, var(--paper-3) 0 2px, transparent 2px 11px), var(--paper-2);
+    border: 1px solid var(--hairline); display: flex; align-items: center; justify-content: center; }
+  .plate .pl { font-family: var(--font-sans); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-4); }
+  .tick { position: absolute; width: 11px; height: 11px; border: 1px solid var(--ink-4); }
+  .tl { top: 12px; left: 12px; border-right: 0; border-bottom: 0; }
+  .tr { top: 12px; right: 12px; border-left: 0; border-bottom: 0; }
+  .bl { bottom: 12px; left: 12px; border-right: 0; border-top: 0; }
+  .br { bottom: 12px; right: 12px; border-left: 0; border-top: 0; }
+  .csub { font-family: var(--font-sans); font-size: 12px; line-height:1.5; color: var(--ink-3); margin-top: 12px; }
+</style></head>
+<body>
+  <div class="cap">Image placeholder plate</div>
+  <div class="plate">
+    <span class="tick tl"></span><span class="tick tr"></span><span class="tick bl"></span><span class="tick br"></span>
+    <span class="pl">Photograph · Drawing · Diagram</span>
+  </div>
+  <p class="csub">Tonal warm-grey field with corner ticks — intentional, print-derived, designed to be replaced by real imagery.</p>
+</body></html>

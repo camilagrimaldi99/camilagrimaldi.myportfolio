@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Spacing" name="Radius & borders" subtitle="Near-zero radius; hairline rules" viewport="700x200" -->
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--paper); padding: 34px 40px; display: flex; gap: 56px; align-items: flex-start; }
+  .col { display: flex; flex-direction: column; gap: 16px; }
+  .lab { font-family: var(--font-sans); font-weight: 500; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); }
+  .samples { display: flex; gap: 18px; align-items: flex-end; }
+  .box { width: 64px; height: 64px; background: var(--paper-3); border: 1px solid var(--hairline-strong); }
+  .cap { font-family: var(--font-sans); font-size: 11px; color: var(--ink-3); margin-top: 8px; text-align: center; }
+  .bl { display:flex; flex-direction:column; align-items:center; }
+  .lines { display: flex; flex-direction: column; gap: 14px; }
+  .ln { font-family: var(--font-sans); font-size: 12px; color: var(--ink-2); display:flex; gap:12px; align-items:center;}
+  .rule { width: 120px; }
+</style></head>
+<body>
+  <div class="col">
+    <span class="lab">Radius — near-zero</span>
+    <div class="samples">
+      <div class="bl"><div class="box" style="border-radius:var(--r-0)"></div><span class="cap">r-0 · 0px</span></div>
+      <div class="bl"><div class="box" style="border-radius:var(--r-sm)"></div><span class="cap">r-sm · 2px</span></div>
+    </div>
+  </div>
+  <div class="col">
+    <span class="lab">Borders / rules</span>
+    <div class="lines">
+      <div class="ln"><div class="rule" style="border-top:1px solid var(--hairline)"></div>hairline</div>
+      <div class="ln"><div class="rule" style="border-top:1px solid var(--hairline-strong)"></div>hairline-strong</div>
+      <div class="ln"><div class="rule" style="border-top:1px solid var(--ink)"></div>ink rule</div>
+    </div>
+  </div>
+</body></html>

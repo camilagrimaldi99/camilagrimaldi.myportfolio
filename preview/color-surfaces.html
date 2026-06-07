@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Surfaces" subtitle="Paper vs ink surfaces" viewport="700x200" -->
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--paper); padding: 0; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 200px; }
+  .light { background: var(--paper); padding: 32px 36px; }
+  .dark { background: var(--ink); padding: 32px 36px; }
+  .name { font-family: var(--font-display); font-weight: 300; font-size: 30px; letter-spacing: -0.01em; }
+  .light .name { color: var(--ink); }
+  .dark .name { color: var(--on-ink); }
+  .lab { font-family: var(--font-sans); font-weight: 500; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 16px; }
+  .light .lab { color: var(--ink-3); }
+  .dark .lab { color: var(--ink-4); }
+  .p { font-family: var(--font-sans); font-size: 13.5px; line-height: 1.6; margin-top: 14px; max-width: 240px; }
+  .light .p { color: var(--ink-2); }
+  .dark .p { color: oklch(0.78 0.004 80); }
+</style></head>
+<body>
+  <div class="split">
+    <div class="light">
+      <div class="lab">Paper surface</div>
+      <div class="name">Camila Grimaldi</div>
+      <p class="p">Default ground. Ink on paper, hairline rules, flat.</p>
+    </div>
+    <div class="dark">
+      <div class="lab">Ink surface</div>
+      <div class="name">Camila Grimaldi</div>
+      <p class="p">Reserved for the footer and rare full-bleed moments.</p>
+    </div>
+  </div>
+</body></html>

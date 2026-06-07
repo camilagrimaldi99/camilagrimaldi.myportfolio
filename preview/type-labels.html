@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Type" name="Labels & metadata" subtitle="Tracked uppercase labels + metadata block" viewport="700x210" -->
+<html lang="en"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; background: var(--paper); padding: 34px 40px; display: flex; flex-direction: column; gap: 26px; }
+  .labels { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; }
+  .lab { font-family: var(--font-sans); font-weight: 500; font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-3); }
+  .lab.active { color: var(--ink); }
+  .lab.idx { color: var(--ink-4); }
+  .meta { display: grid; grid-template-columns: max-content 1fr; gap: 8px 28px; max-width: 420px; }
+  .k { font-family: var(--font-sans); font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+  .v { font-family: var(--font-sans); font-weight: 400; font-size: 14px; color: var(--ink); }
+  hr { border: 0; border-top: 1px solid var(--hairline); margin: 0; }
+</style></head>
+<body>
+  <div class="labels">
+    <span class="lab active">Selected Works</span>
+    <span class="lab">Adaptive Reuse</span>
+    <span class="lab idx">04 / 08</span>
+  </div>
+  <hr>
+  <div class="meta">
+    <span class="k">Location</span><span class="v">Milano, Italy</span>
+    <span class="k">Year</span><span class="v">2024</span>
+    <span class="k">Program</span><span class="v">Adaptive reuse · Hospitality</span>
+    <span class="k">Scale</span><span class="v">1,240 m²</span>
+  </div>
+</body></html>
